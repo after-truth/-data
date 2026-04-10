@@ -1,0 +1,40 @@
+﻿seed: 42
+task:
+  input_type: eeg
+  target_type: mel
+  sample_rate: 64
+  window_size: 256
+  hop_size: 64
+
+data:
+  root_dir: .
+  subjects: ["sub-001", "sub-002"]
+  exclude_keywords: ["artefact"]
+
+training:
+  epochs: 20
+  batch_size: 16
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  device: cpu
+  max_windows_per_recording: 300
+
+model:
+  decoder_type: linear
+  feature_mode: fusion
+  local_context: 32
+  eeg_channels: 64
+  ssm_state_dim: 48
+  mlp_hidden_dim: 128
+
+personalization:
+  enabled: true
+  strategy: subject_bias
+  fine_tune_ratio: 0.1
+  fine_tune_epochs: 8
+  fine_tune_lr: 0.001
+  freeze_backbone: true
+
+logging:
+  save_dir: results
+  run_name: baseline

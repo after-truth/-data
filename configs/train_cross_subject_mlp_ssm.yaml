@@ -1,0 +1,7 @@
+﻿inherits: configs/train_cross_subject.yaml
+model:
+  decoder_type: mlp
+  mlp_hidden_dim: 160
+  feature_mode: ssm_only
+logging:
+  run_name: mlp_ssm

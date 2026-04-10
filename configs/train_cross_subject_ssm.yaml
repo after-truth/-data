@@ -1,0 +1,5 @@
+﻿inherits: configs/train_cross_subject.yaml
+model:
+  feature_mode: ssm_only
+logging:
+  run_name: ablation_ssm
