@@ -1,0 +1,4 @@
+﻿inherits: configs/base.yaml
+protocol:
+  name: cross_subject_loso
+  holdout_subject: sub-002
