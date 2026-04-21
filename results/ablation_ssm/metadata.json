@@ -1,0 +1,5 @@
+{
+  "decoder_type": "linear",
+  "feature_mode": "ssm_only",
+  "target_type": "mel"
+}

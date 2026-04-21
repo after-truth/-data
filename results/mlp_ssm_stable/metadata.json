@@ -1,0 +1,5 @@
+{
+  "decoder_type": "mlp",
+  "feature_mode": "ssm_only",
+  "target_type": "mel"
+}

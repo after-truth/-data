@@ -1,0 +1,7 @@
+{
+  "mse": NaN,
+  "mae": NaN,
+  "corr": NaN,
+  "num_train_windows": 300279,
+  "num_test_windows": 4672
+}
